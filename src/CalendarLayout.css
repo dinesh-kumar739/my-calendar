@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Left triangle image */
+.image-section {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  position: relative; /* for absolute text inside */
+}
+
+/* Welcome text on image */
+.welcome-text {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+/* Right triangle for calendar dates */
+.content-section {
+  flex: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Calendar grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.day {
+  padding: 15px;
+  background: #eaeaea;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.day:hover {
+  background: #d4d4d4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    clip-path: none;
+    height: 200px;
+  }
+}
