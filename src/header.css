@@ -10,7 +10,7 @@
   background: linear-gradient(90deg, #4facfe, #00f2fe); /* gradient color */
   color: white;
   font-weight: bold;
-  z-index: 1000; /* ensure header stays on top */
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
