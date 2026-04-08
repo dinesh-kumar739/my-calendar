@@ -1,4 +1,4 @@
-import Work from "./work";
+import Work from "./Work.jsx";
 import "./App.css";
 
 function App() {
