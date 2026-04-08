@@ -7,11 +7,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background: linear-gradient(90deg, white, #ffffff); /* gradient color */
-  color: #000000;
+  background: var(--bg-color);
+  color: var(--text-color);
   font-weight: bold;
+  font-size: 20px;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px var(--text-color);
 }
 
 .left, .right {
@@ -21,4 +22,16 @@
 
 .left:hover, .right:hover {
   opacity: 0.8;
+}
+
+.theme{
+  color: var(--text-color);
+  background: var(--bg-color);
+  margin:1px;
+  padding:0px 3px px 3px;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+}
+.header1{
+  margin-right: 20px;
 }

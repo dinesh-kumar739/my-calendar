@@ -1,0 +1,15 @@
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --card-bg: #f5f5f5;
+}
+
+.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+}
+
+.task-item {
+  background: var(--card-bg);
+}
