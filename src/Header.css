@@ -2,15 +2,15 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px; /* thin header */
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background: linear-gradient(90deg, #4facfe, #00f2fe); /* gradient color */
-  color: white;
+  background: linear-gradient(90deg, white, #ffffff); /* gradient color */
+  color: #000000;
   font-weight: bold;
-  z-index: 1000; /* ensure header stays on top */
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 

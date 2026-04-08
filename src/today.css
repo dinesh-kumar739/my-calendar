@@ -1,0 +1,15 @@
+.two{
+    position:absolute;
+    margin-top:85px;
+    padding-top: 30px;
+    left:2vw;
+    height:200px;
+    width:47.6vw;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+.two h1,h2{
+    padding: 1px;
+}
