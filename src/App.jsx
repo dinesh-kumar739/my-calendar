@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Work from "./Work.jsx";
 import useDate from "./date.jsx";
 import "./App.css";
 import "./global.css";
@@ -25,7 +24,6 @@ function App() {
             ))}
           </div>
         </div>
-        <Work />
       </div>
     </div>
   );

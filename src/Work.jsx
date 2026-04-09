@@ -65,21 +65,18 @@ function Work() {
       </div>
 
       <div className="tasks">
-  {tasks.map((t, index) => (
-    <div key={index} className="task-item">
-      
-      <div className="left">
-        <p>{t.text}</p>
+        {tasks.map((t, index) => (
+        <div key={index} className="task-item">
+          <div className="left">
+          <p>{t.text}</p>
+        </div>
+        <div className="right">
+          <p>{t.startDate} → {t.endDate}</p>
+          <button onClick={() => handleDelete(index)}>Delete</button>
+        </div>
       </div>
-
-      <div className="right">
-        <p>{t.startDate} → {t.endDate}</p>
-        <button onClick={() => handleDelete(index)}>Delete</button>
-      </div>
-
+    ))}
     </div>
-  ))}
-</div>
     </div>
   );
 }

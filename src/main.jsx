@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Header from "./header.jsx";
 import Today from "./today.jsx";
+import Work from "./work.jsx";
 import "./index.css";
 
 function Root() {
@@ -15,8 +16,15 @@ function Root() {
   return (
     <React.StrictMode>
       <Header dark={dark} setDark={setDark} />
-      <Today />
-      <App />
+      <div className="parent">
+        <div className="leftdiv">
+          <Today />
+          <App />
+        </div>
+        <div className="rightdiv">
+          <Work />
+        </div>
+      </div>
     </React.StrictMode>
   );
 }

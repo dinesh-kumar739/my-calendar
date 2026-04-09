@@ -12,9 +12,30 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Smooth rendering */
 body {
   background-color: #f5f5f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftdiv,
+.rightdiv {
+  width: 48%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .parent {
+    flex-direction: column;
+  }
+
+  .leftdiv, .rightdiv {
+    width: 100%;
+  }
 }
