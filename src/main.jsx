@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Header from "./header.jsx";
 import Today from "./today.jsx";
-import Work from "./work.jsx";
+import Work from "./Work.jsx";
 import "./index.css";
 
 function Root() {
